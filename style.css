@@ -169,12 +169,12 @@ p { margin-bottom: 16px; }
   margin: 0 auto;
   padding: 24px 40px 48px;
   border-top: 1px solid var(--clr-border);
-  font-size: 0.8rem;
-  color: var(--clr-muted);
+  font-size: 0.85rem;
+  color: var(--clr-text-light);
   line-height: 1.6;
 }
 .site-footer a {
-  color: var(--clr-muted);
+  color: var(--clr-text-light);
 }
 
 /* ────────────────────────────
@@ -311,6 +311,50 @@ footer {
   font-size: 0.78rem;
   color: var(--clr-muted);
   border-top: 1px solid var(--clr-border);
+}
+
+/* ────────────────────────────
+   READING GROUP — schedule table
+   ──────────────────────────── */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+  font-size: 0.9rem;
+  table-layout: fixed;
+}
+.schedule-table th {
+  text-align: left;
+  font-weight: 500;
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--clr-border);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--clr-text-light);
+}
+.schedule-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--clr-border);
+  vertical-align: top;
+  line-height: 1.6;
+}
+.schedule-table td:first-child {
+  white-space: nowrap;
+  width: 80px;
+  color: var(--clr-text-light);
+}
+.schedule-table td:nth-child(3) {
+  white-space: nowrap;
+  width: 100px;
+}
+.schedule-table .authors {
+  font-size: 0.82rem;
+  color: var(--clr-muted);
+}
+.schedule-table .break-row td {
+  color: var(--clr-muted);
+  font-style: italic;
 }
 
 /* ────────────────────────────
